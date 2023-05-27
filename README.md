@@ -1,10 +1,7 @@
-<p align="center">
-  <img src="http://img.shields.io/static/v1?label=STATUS& message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
-</p>
-
 # 🖥️ Primeiro projeto
 
-Meu primeiro projeto utilizando Typescript React com a framework Tailwindcss.
+Este é meu primeiro projeto com a tentativa de fazer um clone da interface do usuário do Spotify, desenvolvido usando o framework de CSS Tailwind e a biblioteca React com Typescript. O projeto foi criado com o objetivo de familiarizar-se com o uso do Tailwind e praticar o desenvolvimento de interfaces de usuário responsivas e interativas com o React.
+_(Se encontrar bugs ignore xD)_
 
 ## 🚀 Tecnologias
 
@@ -16,9 +13,17 @@ Meu primeiro projeto utilizando Typescript React com a framework Tailwindcss.
 
 Você pode visualizar o projeto nesse [link](https://spotify-web-new.vercel.app/).
 
-26/05/2023 - Sidebar e Footer ✅
-[Conteúdo da página principal ainda está em desenvolvimento]
+### 📄 O Projeto até agora possui
+
+- Sidebar contendo playlist curtidas e criadas pelo usuário.
+- Barra de reprodução de música básico.
+- Todos ícones possuem interatividade, com Tooltip com informações. _(Usado ChakraUI)_
+- Barra de volume ajustável. _(Usado ChakraUI)_
+
+🚧 Main Content ainda em desenvolvimento 🚧
+
+> 26/05/2023 - ✅ Sidebar e Footer
 
 <p align="center">
-  <img src="https://img.shields.io/badge/EM%20DESENVOLVIMENTO-60846c?style=for-the-badge&logo=waiting&logoColor=FFFFFF/>
+  <img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-60846c?style=for-the-badge&logo=waiting&logoColor=FFFFFF/">
 </p>
