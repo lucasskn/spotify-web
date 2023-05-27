@@ -2,26 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.bg-spotify-gray {
+  background-color: rgb(18, 18, 18);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text-spotify {
+  color: rgb(179, 179, 179);
+}
+.bg-spotify-light {
+  background-color: #4d4d4d;
+}
+
+.w-84 {
+  width: 22rem;
+}
+
+.search-container:hover {
+  padding: 12px; /* Ajuste o valor do padding conforme necessário */
+  background-color: var(--neutral-600);
+  border-radius: 9999px; /* ou outro valor adequado para arredondamento */
+}
+
+.w-100 {
+  width: 30rem;
+}
+
+.w-13 {
+  width: 3.15rem;
+}
+
+.ball-center {
+  right: -0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.h-13 {
+  height: 3.15rem;
+}
+
+.w-15 {
+  width: 3.75rem;
+}
+.h-15 {
+  height: 3.75rem;
+}
+
+.rounded-m {
+  border-radius: 0.25rem;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.playlisthover {
+  padding: 12px;
 }
