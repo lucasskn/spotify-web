@@ -19,8 +19,7 @@ Você pode visualizar o projeto nesse [link](https://spotify-web-new.vercel.app/
 - Barra de reprodução de música básico.
 - Todos ícones possuem interatividade, com Tooltip com informações. _(Usado ChakraUI)_
 - Barra de volume ajustável. _(Usado ChakraUI)_
-
-🚧 Main Content ainda em desenvolvimento 🚧
+- 🚧 Main Content ainda em desenvolvimento 🚧
 
 > 26/05/2023 - ✅ Sidebar e Footer
 
