@@ -98,11 +98,6 @@ export default function Home() {
           </aside>
         </div>
         <main className="flex-1 bg-spotify-gray rounded-lg mx-2 mt-2 p-2">
-            <div className="flex justify-between">
-              <div>Objeto 1</div>
-              <div>Objeto 2</div>
-              <div>Objeto 3</div>
-            </div>
         </main>
       </div>
       <footer className="h-24 p-4 flex w-auto justify-between content-between relative">
@@ -162,7 +157,7 @@ export default function Home() {
             <div className='flex flex-1 gap-2 xl:gap-3 text-spotify'>
               <span className='hover:text-white transition-all cursor-pointer'>
                 <Tooltip label='Lyrics' bg='neutral.700' fontWeight={400} fontSize={14} borderRadius={3} paddingX={2} paddingY={1} openDelay={300} color='white'>
-                  <Mic2 width={19}/>
+                  <Mic2 width={17}/>
                 </Tooltip>
               </span>
               <span className='hover:text-white transition-all cursor-pointer'>
@@ -180,7 +175,7 @@ export default function Home() {
                   <Volume2 width={19}/>
                 </Tooltip>
               </span>
-              <div className='group/item volume-bar my-auto flex items-center w-20 xl:w-24 cursor-default'>
+              <div className='group/item volume-bar my-auto flex items-center w-16 lg:w-20 xl:w-24 cursor-default'>
                 <VolumeSlider></VolumeSlider>
               </div>
             </div>
