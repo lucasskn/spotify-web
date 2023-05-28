@@ -25,6 +25,7 @@ Você pode visualizar o projeto nesse [link](https://spotify-web-new.vercel.app/
 - 🚧 Main Content ainda em desenvolvimento 🚧
 
 > 26/05/2023 - ✅ Sidebar & Footer
+
 > 27/05/2020 - ⌛️ Main Content
 
 <p align="center">
