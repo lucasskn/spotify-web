@@ -13,15 +13,19 @@ _(Se encontrar bugs ignore xD)_
 
 Você pode visualizar o projeto nesse [link](https://spotify-web-new.vercel.app/).
 
+- Todo o Desenvolvimento do projeto foi usado [TailwindCSS](https://tailwindcss.com/)
+- Barra de Volume & Tooltip foi usado a Biblioteca [ChakraUI](https://chakra-ui.com/)
+
 ### 📄 O Projeto até agora possui
 
 - Sidebar contendo playlist curtidas e criadas pelo usuário.
 - Barra de reprodução de música básico.
-- Todos ícones possuem interatividade, com Tooltip com informações. _(Usado ChakraUI)_
-- Barra de volume ajustável. _(Usado ChakraUI)_
+- Todos ícones possuem interatividade, com Tooltip com informações.
+- Barra de volume ajustável.
 - 🚧 Main Content ainda em desenvolvimento 🚧
 
-> 26/05/2023 - ✅ Sidebar e Footer
+> 26/05/2023 - ✅ Sidebar & Footer
+> 27/05/2020 - ⌛️ Main Content
 
 <p align="center">
   <img src="https://img.shields.io/badge/STATUS-EM%20DESENVOLVIMENTO-60846c?style=for-the-badge&logo=waiting&logoColor=FFFFFF/">

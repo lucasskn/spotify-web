@@ -1,9 +1,11 @@
 'use client'
-import { Home as HomeIcon, Search, Library, ArrowRight, Plus, ChevronDown, Heart, PinIcon, Mic2, MonitorSpeaker, Volume2, ListMusic, Pause, SkipBack, SkipForward, Shuffle, Repeat2, } from 'lucide-react';
+import { Home as HomeIcon, Search, Library, ArrowRight, Plus, ChevronDown, Heart, PinIcon, Mic2, MonitorSpeaker, Volume2, ListMusic, Pause, SkipBack, SkipForward, Shuffle, Repeat2, ChevronLeft, ChevronRight, MoreHorizontal} from 'lucide-react';
 
 import { Tooltip } from '@chakra-ui/react'
 import Image from 'next/image';
 import VolumeSlider from './components/volumeslider';
+import CustomToolTip from './components/customtooltip';
+
 
 export default function Home() {
   return (
@@ -97,10 +99,78 @@ export default function Home() {
             </nav>
           </aside>
         </div>
-        <main className="flex-1 bg-spotify-gray rounded-lg mx-2 mt-2 p-2">
+        <main className="flex-1 bg-spotify-gray rounded-lg mx-2 mt-2 py-4 px-6 relative overflow-auto">
+          <div className='flex flex-1 space-x-3 lg:space-x-1 justify-between pb-4 relative'>
+            <div className='flex-row flex gap-2'>
+              <button className='flex justify-center items-center bg-black text-spotify bg-opacity-30 rounded-full w-9 h-9 cursor-not-allowed'>
+                  <ChevronLeft size={25} strokeWidth={1.2} className=''/>
+              </button>
+              <button className='flex justify-center items-center bg-black text-spotify bg-opacity-30 rounded-full w-9 h-9 cursor-not-allowed'>
+                  <ChevronRight size={25} strokeWidth={1.2} className=''/>
+              </button>
+            </div>
+
+            <button className='flex justify-center items-center content-end bg-black text-spotify bg-opacity-30 rounded-full p-2 w-9 h-9 hover:scale-105 hover:bg-opacity-80'>
+              <CustomToolTip/>
+            </button>
+          </div>
+
+          <div className='overflow-y-auto absolute'>
+            <div className='top-playlist flex w-4/5 m-auto bg-gradient-to-tr from-black to-transparent rounded-md '>
+              <div className='flex px-4 pt-5 lg:pt-2 pb-3 gap-4 justify-center'>
+                <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={200} height={200} quality={100} className='my-auto'/>
+                <div className='flex flex-col gap-4 justify-center '>
+                  <p className='font-bold text-xs flex'>PLAYLIST</p>
+                  <h1 className='font-bold text-6xl w-auto h-36 hover:underline cursor-pointer overflow-hidden overflow-ellipsis'>Best EmoRap Playlists | Most Played | Emo Songs | Top 100 Songs Top 100 Songs</h1>
+                  <p>Listen the best Emo Rap on Spotify! Hits of $uicideboy$, LilPeep, BONES and moreBONES and more.</p>
+                  <div className='buttonsxd flex gap-5 items-center transition-all'>
+                    <button className='flex w-24 h-12 py-5 px-6 items-center justify-center rounded-full text-black font-semibold bg-green-600 hover:scale-105'>Play</button>
+                    <button className='flex w-24 h-12 py-5 px-6 items-center justify-center rounded-full font-semibold border border-neutral-400 hover:scale-105'>Follow</button>
+                    <Tooltip label='More' placement='top' bg='neutral.700' fontWeight={400} fontSize={14} borderRadius={3} paddingX={2} paddingY={1} openDelay={300}color='white'>
+                      <MoreHorizontal color='lightgray' strokeWidth={2} width={24} className='ml-2'/>
+                    </Tooltip>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h1 className='font-bold text-3xl py-3'>Good aftermoon</h1>
+              <div className='grid xl:grid-cols-3 lg:grid-cols-2 grid-flow-row gap-x-7 gap-y-4 lg:gap-x-4 lg:gap-y-3'>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+                <div className='w-auto bg-neutral-800 overflow-hidden rounded-md'>
+                  <Image src={'https://i.ibb.co/VHDnVbM/Album-Suicideboys-And-Shakewell-Shameless-Suicide.jpg'} alt='album' width={80} height={80} quality={100}/>
+                </div>
+              </div>
+          </div>
+
+          
+
+
+
         </main>
       </div>
-      <footer className="h-24 p-4 flex w-auto justify-between content-between relative">
+      <footer className="h-24 p-4 flex w-auto justify-between content-between">
         <div className='music-playing flex'>
           <div className='flex gap-4 justify-center items-center'>
             <Image src="https://i.ibb.co/277Zj3m/94995ba357b655e67cc6301133b6e928-600x600x1.jpg" alt="Spotify Logo" width={600} height={600} className='w-15 h-15 rounded-m hover:cursor-pointer'/>
